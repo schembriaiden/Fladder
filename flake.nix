@@ -98,6 +98,8 @@
             sqlite
             alsa-lib
             libepoxy
+            dbus
+            glib
           ];
 
           postInstall = ''
