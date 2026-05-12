@@ -94,7 +94,7 @@ abstract class BaseAppWrapperState<T extends BaseAppWrapper> extends ConsumerSta
   void didChangeAppLifecycleState(AppLifecycleState state) {
     final ignoreLifeCycle = ref.read(lockScreenActiveProvider) ||
         ref.read(userProvider) == null ||
-        ref.read(videoPlayerProvider).lastState?.playing == true ||
+        ref.read(mediaPlaybackProvider).playing == true ||
         nativeActivityStarted;
 
     if (ignoreLifeCycle) {

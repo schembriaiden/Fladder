@@ -18,7 +18,6 @@ final playBackModel = StateProvider<PlaybackModel?>((ref) => null);
 
 final videoPlayerProvider = StateNotifierProvider<VideoPlayerNotifier, MediaControlsWrapper>((ref) {
   final videoPlayer = VideoPlayerNotifier(ref);
-  videoPlayer.init();
   return videoPlayer;
 });
 
